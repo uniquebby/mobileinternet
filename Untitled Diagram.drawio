@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-12T13:41:06.235Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.3 Safari/605.1.15" etag="z7a2C7ZP0YSm4UcpsPZv" version="13.9.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-12T13:48:41.258Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.3 Safari/605.1.15" etag="VB72qXdtMllt0eB3eAT-" version="13.9.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="855" dy="5130" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1026" dy="5220" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -170,6 +170,36 @@
           <mxGeometry y="78" width="230" height="26" as="geometry" />
         </mxCell>
         <mxCell id="RFTl1F0F4lwMHIRzqbBX-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.096;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RFTl1F0F4lwMHIRzqbBX-12" target="RFTl1F0F4lwMHIRzqbBX-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RFTl1F0F4lwMHIRzqbBX-19" value="struct inode" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1390" y="-290" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="RFTl1F0F4lwMHIRzqbBX-20" value="struct address_space *f_mapping" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="RFTl1F0F4lwMHIRzqbBX-19">
+          <mxGeometry y="26" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RFTl1F0F4lwMHIRzqbBX-21" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="RFTl1F0F4lwMHIRzqbBX-19">
+          <mxGeometry y="52" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RFTl1F0F4lwMHIRzqbBX-22" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="RFTl1F0F4lwMHIRzqbBX-19">
+          <mxGeometry y="78" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RFTl1F0F4lwMHIRzqbBX-23" value="struct address_sapce" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2140" y="-200" width="340" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="RFTl1F0F4lwMHIRzqbBX-24" value="struct inode *host" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="RFTl1F0F4lwMHIRzqbBX-23">
+          <mxGeometry y="26" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RFTl1F0F4lwMHIRzqbBX-25" value="struct prio_tree_root i_mmap // 私有和共享映射的树" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="RFTl1F0F4lwMHIRzqbBX-23">
+          <mxGeometry y="52" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RFTl1F0F4lwMHIRzqbBX-26" value="struct list_head i_mmap_nonlinear  //VM_NONLINESR映射的链表" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="RFTl1F0F4lwMHIRzqbBX-23">
+          <mxGeometry y="78" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RFTl1F0F4lwMHIRzqbBX-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.009;entryY=0.077;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RFTl1F0F4lwMHIRzqbBX-15" target="RFTl1F0F4lwMHIRzqbBX-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RFTl1F0F4lwMHIRzqbBX-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.115;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RFTl1F0F4lwMHIRzqbBX-20" target="RFTl1F0F4lwMHIRzqbBX-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
